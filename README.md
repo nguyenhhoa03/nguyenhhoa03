@@ -3,7 +3,7 @@
 ![Profile Banner](https://via.placeholder.com/1200x200?text=)
 
 ## Giới thiệu
-Xin chào! Mình là **Nguyễn Hữu Hòa**, hiện đang là học sinh với niềm đam mê sâu sắc về Python và Linux. Mình đang phát triển các app script tự động hóa, mini-app và tiện ích.
+Xin chào! Mình là **Nguyễn Hữu Hòa**, hiện đang là học sinh có một chút kinh nghiệm về Python và Linux. Mình đang phát triển các app script tự động hóa, mini-app và tiện ích.
 
 ---
 
