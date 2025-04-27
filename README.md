@@ -49,7 +49,3 @@ Mình luôn sẵn sàng trao đổi, hợp tác hoặc hỗ trợ nếu bạn c�
 Hãy tạo issue hoặc gửi email cho mình nhé!
 
 ---
-
-<p align="center">  
-  © 2025 Nguyễn Hữu Hòa  
-</p>
