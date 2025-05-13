@@ -23,16 +23,12 @@ Xin chào! Mình là **Nguyễn Hữu Hòa**, hiện đang là học sinh có m�
 
 ## Dự án nổi bật
 
-### Mini Apps Launcher  
+### [Mini Apps Launcher](https://github.com/nguyenhhoa03/mini-apps) 
 > Trình khởi chạy tiện ích đa nền tảng cho Windows & Linux  
 - Giao diện trực quan, dễ tìm kiếm và khởi chạy application.  
 - Tự động cập nhật phần mềm từ GitHub.  
 - Hỗ trợ filter, search nhanh và khởi chạy script chỉ với một cú click.  
 
-### Blog “Về Công nghệ Thông tin”  
-> Chia sẻ kiến thức & hướng dẫn về Linux, DevOps, lập trình Python.  
-- Bài viết về cấu hình Linux, cách tweak desktop environment.  
-- Hướng dẫn viết shell script tự động hoá các tác vụ thường gặp.  
 
 ---
 
