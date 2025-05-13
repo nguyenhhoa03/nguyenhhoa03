@@ -35,7 +35,6 @@ Xin chào! Mình là **Nguyễn Hữu Hòa**, hiện đang là học sinh có m�
 ## Liên kết
 
 - 🔗 GitHub: [nguyenhhoa03](https://github.com/nguyenhhoa03)
-- 🌐 Blog: [Blog](https://github.com/nguyenhhoa03/Blog) Comming soon.
 - 📧 Email: nguyenhhoa03@gmail.com
 
 ---
