@@ -1,51 +1,58 @@
-# Nguyễn Hữu Hòa
-
+# Nguyen Huu Hoa
 ![Profile Banner](github-header-image.png)
 
-## Giới thiệu
-Xin chào! Mình là **Nguyễn Hữu Hòa**, hiện đang là học sinh có một chút kinh nghiệm về Python và Linux. Mình đang phát triển các app script tự động hóa, mini-app và tiện ích.
+## About Me
+Hello! I'm **Nguyen Huu Hoa**, a passionate developer with hands-on experience in Python and Linux systems. I specialize in creating automation scripts, mini-applications, and productivity tools that solve real-world problems.
 
 ---
 
-## Kỹ năng
+## Technical Skills
 
-- **Hệ điều hành & DevOps**  
-  - Linux (Fedora, Ubuntu, Debian, Nobara…)    
-  - Desktop Environments (GNOME, KDE, Xfce,…)  
-  - Shell Scripting (Bash, Zsh), Batch Script  
+**Systems & DevOps**
+- Linux Distributions: Fedora, Ubuntu, Debian, Nobara
+- Desktop Environments: GNOME, KDE, Xfce
+- Shell Scripting: Bash, Zsh, Batch Script
 
-- **Lập trình**  
-  - **Python**: viết tool, tự động hoá, GUI với CustomTkinter  
-  - Linux Shell scripting  
-  - Batch script (Windows)  
+**Programming & Development**
+- **Python**: Automation tools, GUI applications with CustomTkinter
+- Linux Shell scripting for system administration
+- Windows Batch scripting for cross-platform solutions
 
 ---
 
-## Dự án nổi bật
+## Featured Projects
 
-### [Mini Apps Launcher](https://github.com/nguyenhhoa03/mini-apps) 
-> Trình khởi chạy tiện ích
-- Giao diện trực quan, dễ tìm kiếm và khởi chạy application.  
-- Tự động cập nhật phần mềm từ GitHub.  
-- Hỗ trợ filter, search nhanh và khởi chạy script chỉ với một cú click.  
+### [MD2Web - Markdown to Web Converter](https://github.com/nguyenhhoa03/md2web)
+*A sleek web-based Markdown viewer with modern UI and advanced features*
+
+- **Real-time Rendering**: Convert any Markdown file to beautiful web pages instantly
+- **Dynamic Theme System**: Automatic light/dark mode with smooth transitions and manual toggle
+- **Smart Navigation**: Auto-generated table of contents with smooth scrolling and active section highlighting
+- **Copy-to-Clipboard**: One-click code copying with syntax highlighting and language detection
+- **Responsive Design**: Seamless experience across desktop and mobile devices
+- **URL Parameters**: Load any Markdown file via `?url=` parameter for maximum flexibility
+- **Website**: [marksite.free.nf](https://marksite.free.nf/)
 
 ### [Simple Website Templates](https://github.com/nguyenhhoa03/simple-website)
-> Các mẫu website mã nguồn mở dành cho mọi người.
-- Thuần html/css/js không dùng dependencies, frameworks ngoài.
-- Thiết kế đẹp: Hiện đại, [dễ dàng áp dụng chỉnh sửa](https://github.com/nguyenhhoa03/web-editor)
-- Mã nguồn mở: Miễn phí, dễ dàng chỉnh sửa tùy ý mãi mãi.
+*Open-source website templates for developers and creators*
+
+- **Dependency-Free**: Pure HTML/CSS/JavaScript with no external frameworks
+- **Modern Design**: Contemporary aesthetics with [easy customization tools](https://github.com/nguyenhhoa03/web-editor)
+- **Open Source**: Free forever with complete customization freedom
+- **Website**: [webtemplates.free.nf](https://webtemplates.free.nf/)
+---
+
+## Connect With Me
+
+- 🔗 **GitHub**: [nguyenhhoa03](https://github.com/nguyenhhoa03)
+- 📧 **Email**: nguyenhhoa03@gmail.com
 
 ---
 
-## Liên kết
+## Let's Collaborate
 
-- 🔗 GitHub: [nguyenhhoa03](https://github.com/nguyenhhoa03)
-- 📧 Email: nguyenhhoa03@gmail.com
+I'm always open to discussing new projects, sharing knowledge, or helping fellow developers with Python and Linux challenges. Whether you're looking for collaboration opportunities or need technical guidance, feel free to reach out!
 
----
-
-## Cách liên hệ  
-Mình luôn sẵn sàng trao đổi, hợp tác hoặc hỗ trợ nếu bạn có bất kỳ thắc mắc nào về Python, Linux.  
-Hãy tạo issue hoặc gửi email cho mình nhé!
+**Get in touch**: Create an issue on any of my repositories or send me an email directly.
 
 ---
