@@ -24,11 +24,16 @@ Xin chào! Mình là **Nguyễn Hữu Hòa**, hiện đang là học sinh có m�
 ## Dự án nổi bật
 
 ### [Mini Apps Launcher](https://github.com/nguyenhhoa03/mini-apps) 
-> Trình khởi chạy tiện ích đa nền tảng cho Windows & Linux  
+> Trình khởi chạy tiện ích
 - Giao diện trực quan, dễ tìm kiếm và khởi chạy application.  
 - Tự động cập nhật phần mềm từ GitHub.  
 - Hỗ trợ filter, search nhanh và khởi chạy script chỉ với một cú click.  
 
+### [Simple Website Templates](https://github.com/nguyenhhoa03/simple-website)
+> Các mẫu website mã nguồn mở dành cho mọi người.
+- Thuần html/css/js không dùng dependencies, frameworks ngoài.
+- Thiết kế đẹp: Hiện đại, [dễ dàng áp dụng chỉnh sửa](https://github.com/nguyenhhoa03/web-editor)
+- Mã nguồn mở: Miễn phí, dễ dàng chỉnh sửa tùy ý mãi mãi.
 
 ---
 
