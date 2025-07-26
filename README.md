@@ -33,13 +33,6 @@ Hello! I'm **Nguyen Huu Hoa**, a passionate developer with hands-on experience i
 - **URL Parameters**: Load any Markdown file via `?url=` parameter for maximum flexibility
 - **Website**: [marksite.free.nf](https://marksite.free.nf/)
 
-### [Simple Website Templates](https://github.com/nguyenhhoa03/simple-website)
-*Open-source website templates for developers and creators*
-
-- **Dependency-Free**: Pure HTML/CSS/JavaScript with no external frameworks
-- **Modern Design**: Contemporary aesthetics with [easy customization tools](https://github.com/nguyenhhoa03/web-editor)
-- **Open Source**: Free forever with complete customization freedom
-- **Website**: [webtemplates.free.nf](https://webtemplates.free.nf/)
 ---
 
 ## Connect With Me
