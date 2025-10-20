@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#1a4d2e"/>
+  
+  <!-- Snow ground -->
+  <ellipse cx="400" cy="580" rx="450" ry="80" fill="#ffffff" opacity="0.3"/>
+  
+  <!-- Christmas tree -->
+  <polygon points="400,100 320,200 350,200 280,280 310,280 250,360 550,360 490,280 520,280 450,200 480,200" fill="#0d7c3a"/>
+  <polygon points="400,100 320,200 350,200 280,280 310,280 250,360 550,360 490,280 520,280 450,200 480,200" fill="#0a5f2d" opacity="0.3"/>
+  
+  <!-- Tree trunk -->
+  <rect x="380" y="360" width="40" height="60" fill="#6b4423"/>
+  
+  <!-- Star on top -->
+  <polygon points="400,80 410,105 437,105 415,120 423,145 400,130 377,145 385,120 363,105 390,105" fill="#ffd700" stroke="#ffed4e" stroke-width="2"/>
+  
+  <!-- Ornaments -->
+  <circle cx="350" cy="230" r="12" fill="#ff4444"/>
+  <circle cx="450" cy="240" r="12" fill="#4444ff"/>
+  <circle cx="400" cy="260" r="12" fill="#ffdd44"/>
+  <circle cx="320" cy="300" r="12" fill="#ff44ff"/>
+  <circle cx="480" cy="310" r="12" fill="#44ffff"/>
+  <circle cx="370" cy="330" r="12" fill="#ff8844"/>
+  <circle cx="430" cy="340" r="12" fill="#ff4444"/>
+  
+  <!-- Ornament highlights -->
+  <circle cx="355" cy="225" r="4" fill="#ffffff" opacity="0.6"/>
+  <circle cx="455" cy="235" r="4" fill="#ffffff" opacity="0.6"/>
+  <circle cx="405" cy="255" r="4" fill="#ffffff" opacity="0.6"/>
+  
+  <!-- Garland -->
+  <path d="M 280,280 Q 340,270 400,275 T 520,280" stroke="#ffd700" stroke-width="3" fill="none"/>
+  <path d="M 250,360 Q 325,350 400,355 T 550,360" stroke="#ffd700" stroke-width="3" fill="none"/>
+  
+  <!-- Snowflakes -->
+  <g id="snowflake" fill="#ffffff">
+    <circle cx="0" cy="0" r="2"/>
+    <line x1="-8" y1="0" x2="8" y2="0" stroke="#ffffff" stroke-width="1.5"/>
+    <line x1="0" y1="-8" x2="0" y2="8" stroke="#ffffff" stroke-width="1.5"/>
+    <line x1="-6" y1="-6" x2="6" y2="6" stroke="#ffffff" stroke-width="1.5"/>
+    <line x1="-6" y1="6" x2="6" y2="-6" stroke="#ffffff" stroke-width="1.5"/>
+  </g>
+  
+  <use href="#snowflake" x="150" y="120"/>
+  <use href="#snowflake" x="650" y="180"/>
+  <use href="#snowflake" x="100" y="300"/>
+  <use href="#snowflake" x="700" y="250"/>
+  <use href="#snowflake" x="180" y="450"/>
+  <use href="#snowflake" x="620" y="420"/>
+  <use href="#snowflake" x="220" y="180"/>
+  <use href="#snowflake" x="580" y="150"/>
+  
+  <!-- Gift boxes -->
+  <g>
+    <rect x="280" y="450" width="60" height="50" fill="#ff4444"/>
+    <rect x="280" y="450" width="60" height="15" fill="#cc0000"/>
+    <rect x="307" y="450" width="6" height="50" fill="#ffd700"/>
+    <rect x="280" y="472" width="60" height="6" fill="#ffd700"/>
+    <path d="M 310,450 Q 310,440 305,435 Q 300,440 300,450" fill="#ffd700"/>
+    <path d="M 310,450 Q 310,440 315,435 Q 320,440 320,450" fill="#ffd700"/>
+  </g>
+  
+  <g>
+    <rect x="460" y="460" width="50" height="45" fill="#4444ff"/>
+    <rect x="460" y="460" width="50" height="12" fill="#2222aa"/>
+    <rect x="482" y="460" width="6" height="45" fill="#ffdd44"/>
+    <rect x="460" y="480" width="50" height="6" fill="#ffdd44"/>
+    <path d="M 485,460 Q 485,452 481,448 Q 477,452 477,460" fill="#ffdd44"/>
+    <path d="M 485,460 Q 485,452 489,448 Q 493,452 493,460" fill="#ffdd44"/>
+  </g>
+  
+  <!-- Text box background -->
+  <rect x="150" y="500" width="500" height="80" rx="10" fill="#ffffff" opacity="0.9"/>
+  
+  <!-- Merry Christmas text -->
+  <text x="400" y="535" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#d42426" text-anchor="middle">
+    Merry Christmas
+  </text>
+  
+  <!-- Name -->
+  <text x="400" y="565" font-family="Arial, sans-serif" font-size="24" fill="#1a4d2e" text-anchor="middle">
+    Nguyễn Hữu Hòa
+  </text>
+  
+  <!-- Decorative border -->
+  <rect x="10" y="10" width="780" height="580" rx="15" fill="none" stroke="#ffd700" stroke-width="4"/>
+  <rect x="20" y="20" width="760" height="560" rx="12" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.5"/>
+</svg>
