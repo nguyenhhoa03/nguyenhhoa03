@@ -57,3 +57,8 @@ Cài đặt Proton VPN
 ```
 flatpak install flathub com.protonvpn.www
 ```
+
+Cài đặt Extension Manager
+```
+flatpak install flathub com.mattjakeman.ExtensionManager
+```
