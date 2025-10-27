@@ -60,6 +60,11 @@ Cài đặt Proton VPN
 flatpak install flathub com.protonvpn.www
 ```
 
+Cài đặt Extension Manager
+```
+flatpak install flathub com.mattjakeman.ExtensionManager
+```
+
 ## Cài đặt snapshot
 
 Cài Snapper & service
@@ -75,8 +80,4 @@ sudo snapper -c root create-config /
 Cấu hình snapshot
 ```
 sudo nano /etc/snapper/configs/root
-```
-Cài đặt Extension Manager
-```
-flatpak install flathub com.mattjakeman.ExtensionManager
 ```
