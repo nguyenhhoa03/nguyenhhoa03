@@ -1,5 +1,7 @@
 # Cấu hình Arch Linux lúc cài đặt
 
+## Cài đặt gói
+
 Fix `Remote Desktop`
 ```
 gsettings set org.gnome.mutter.wayland xwayland-disable-extension "['Xtest']"
@@ -58,6 +60,22 @@ Cài đặt Proton VPN
 flatpak install flathub com.protonvpn.www
 ```
 
+## Cài đặt snapshot
+
+Cài Snapper & service
+```
+sudo pacman -S snapper snap-pac
+```
+
+Tạo cấu hình
+```
+sudo snapper -c root create-config /
+```
+
+Cấu hình snapshot
+```
+sudo nano /etc/snapper/configs/root
+```
 Cài đặt Extension Manager
 ```
 flatpak install flathub com.mattjakeman.ExtensionManager
