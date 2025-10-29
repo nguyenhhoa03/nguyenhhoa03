@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trình Quay Màn Hình Online</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 800px;
+            width: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 2em;
+        }
+
+        .preview-area {
+            background: #000;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            position: relative;
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .placeholder {
+            color: #666;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .controls {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 12px 30px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .btn-start {
+            background: #10b981;
+            color: white;
+        }
+
+        .btn-stop {
+            background: #ef4444;
+            color: white;
+        }
+
+        .btn-download {
+            background: #3b82f6;
+            color: white;
+        }
+
+        .btn-pause {
+            background: #f59e0b;
+            color: white;
+        }
+
+        .status {
+            text-align: center;
+            padding: 15px;
+            background: #f3f4f6;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .status.recording {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+
+        .status.paused {
+            background: #fef3c7;
+            color: #92400e;
+        }
+
+        .timer {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+            font-family: 'Courier New', monospace;
+        }
+
+        .info {
+            background: #e0e7ff;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #4338ca;
+        }
+
+        .recording-indicator {
+            display: none;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #ef4444;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            animation: pulse 2s infinite;
+        }
+
+        .recording-indicator.active {
+            display: block;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎥 Trình Quay Màn Hình</h1>
+        
+        <div class="status" id="status">
+            Sẵn sàng quay màn hình
+        </div>
+
+        <div class="timer" id="timer">00:00:00</div>
+
+        <div class="preview-area" id="previewArea">
+            <div class="placeholder">
+                <h3>👆 Nhấn "Bắt đầu quay" để bắt đầu</h3>
+                <p>Bạn sẽ được yêu cầu chọn màn hình hoặc cửa sổ để chia sẻ</p>
+            </div>
+            <video id="preview" autoplay muted style="display:none;"></video>
+            <div class="recording-indicator" id="recordingIndicator">● REC</div>
+        </div>
+
+        <div class="controls">
+            <button class="btn-start" id="startBtn" onclick="startRecording()">
+                ▶ Bắt đầu quay
+            </button>
+            <button class="btn-pause" id="pauseBtn" onclick="togglePause()" disabled>
+                ⏸ Tạm dừng
+            </button>
+            <button class="btn-stop" id="stopBtn" onclick="stopRecording()" disabled>
+                ⏹ Dừng quay
+            </button>
+            <button class="btn-download" id="downloadBtn" onclick="downloadVideo()" disabled>
+                ⬇ Tải xuống
+            </button>
+        </div>
+
+        <div class="info">
+            <strong>💡 Hướng dẫn:</strong><br>
+            1. Nhấn "Bắt đầu quay" và chọn màn hình/cửa sổ bạn muốn quay<br>
+            2. Sử dụng "Tạm dừng" để tạm dừng và tiếp tục quay<br>
+            3. Nhấn "Dừng quay" khi hoàn thành<br>
+            4. Tải video về máy của bạn<br>
+            <small>⚠️ Video chỉ được lưu trên trình duyệt của bạn, không gửi lên server nào.</small>
+        </div>
+    </div>
+
+    <script>
+        let mediaRecorder;
+        let recordedChunks = [];
+        let stream;
+        let timerInterval;
+        let seconds = 0;
+        let isPaused = false;
+
+        const preview = document.getElementById('preview');
+        const startBtn = document.getElementById('startBtn');
+        const stopBtn = document.getElementById('stopBtn');
+        const pauseBtn = document.getElementById('pauseBtn');
+        const downloadBtn = document.getElementById('downloadBtn');
+        const status = document.getElementById('status');
+        const timer = document.getElementById('timer');
+        const recordingIndicator = document.getElementById('recordingIndicator');
+
+        async function startRecording() {
+            try {
+                stream = await navigator.mediaDevices.getDisplayMedia({
+                    video: { 
+                        mediaSource: 'screen',
+                        width: { ideal: 1920 },
+                        height: { ideal: 1080 }
+                    },
+                    audio: true
+                });
+
+                preview.srcObject = stream;
+                preview.style.display = 'block';
+                document.querySelector('.placeholder').style.display = 'none';
+
+                const options = { mimeType: 'video/webm;codecs=vp9' };
+                if (!MediaRecorder.isTypeSupported(options.mimeType)) {
+                    options.mimeType = 'video/webm;codecs=vp8';
+                    if (!MediaRecorder.isTypeSupported(options.mimeType)) {
+                        options.mimeType = 'video/webm';
+                    }
+                }
+
+                recordedChunks = [];
+                mediaRecorder = new MediaRecorder(stream, options);
+
+                mediaRecorder.ondataavailable = (e) => {
+                    if (e.data.size > 0) {
+                        recordedChunks.push(e.data);
+                    }
+                };
+
+                mediaRecorder.onstop = () => {
+                    const blob = new Blob(recordedChunks, { type: 'video/webm' });
+                    const url = URL.createObjectURL(blob);
+                    preview.srcObject = null;
+                    preview.src = url;
+                    preview.controls = true;
+                    downloadBtn.disabled = false;
+                    recordingIndicator.classList.remove('active');
+                };
+
+                mediaRecorder.start(1000);
+
+                startBtn.disabled = true;
+                stopBtn.disabled = false;
+                pauseBtn.disabled = false;
+                downloadBtn.disabled = true;
+
+                status.textContent = 'Đang quay màn hình...';
+                status.className = 'status recording';
+                recordingIndicator.classList.add('active');
+
+                startTimer();
+
+                stream.getVideoTracks()[0].onended = () => {
+                    stopRecording();
+                };
+
+            } catch (err) {
+                console.error('Lỗi:', err);
+                alert('Không thể truy cập màn hình. Vui lòng cho phép chia sẻ màn hình.');
+            }
+        }
+
+        function togglePause() {
+            if (!mediaRecorder) return;
+
+            if (isPaused) {
+                mediaRecorder.resume();
+                pauseBtn.textContent = '⏸ Tạm dừng';
+                status.textContent = 'Đang quay màn hình...';
+                status.className = 'status recording';
+                recordingIndicator.classList.add('active');
+                isPaused = false;
+                startTimer();
+            } else {
+                mediaRecorder.pause();
+                pauseBtn.textContent = '▶ Tiếp tục';
+                status.textContent = 'Đã tạm dừng';
+                status.className = 'status paused';
+                recordingIndicator.classList.remove('active');
+                isPaused = true;
+                stopTimer();
+            }
+        }
+
+        function stopRecording() {
+            if (mediaRecorder && mediaRecorder.state !== 'inactive') {
+                mediaRecorder.stop();
+                stream.getTracks().forEach(track => track.stop());
+
+                startBtn.disabled = false;
+                stopBtn.disabled = true;
+                pauseBtn.disabled = true;
+
+                status.textContent = 'Quay xong! Bạn có thể tải video về.';
+                status.className = 'status';
+
+                stopTimer();
+            }
+        }
+
+        function downloadVideo() {
+            const blob = new Blob(recordedChunks, { type: 'video/webm' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `screen-recording-${new Date().getTime()}.webm`;
+            a.click();
+            URL.revokeObjectURL(url);
+        }
+
+        function startTimer() {
+            timerInterval = setInterval(() => {
+                seconds++;
+                updateTimerDisplay();
+            }, 1000);
+        }
+
+        function stopTimer() {
+            clearInterval(timerInterval);
+        }
+
+        function updateTimerDisplay() {
+            const hrs = Math.floor(seconds / 3600);
+            const mins = Math.floor((seconds % 3600) / 60);
+            const secs = seconds % 60;
+            timer.textContent = 
+                `${hrs.toString().padStart(2, '0')}:${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+        }
+
+        // Reset timer khi bắt đầu quay mới
+        startBtn.addEventListener('click', () => {
+            seconds = 0;
+            updateTimerDisplay();
+        });
+    </script>
+</body>
+</html>
