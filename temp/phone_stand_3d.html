@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giá Đỡ Điện Thoại 3D</title>
+    <title>Hướng Dẫn Tạo Giá Đỡ Điện Thoại 3D</title>
     <style>
         body {
             margin: 0;
@@ -11,30 +11,134 @@
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             font-family: Arial, sans-serif;
         }
+        #canvas-container {
+            width: 100%;
+            height: 100vh;
+        }
         #info {
             position: absolute;
             top: 20px;
             left: 20px;
             color: white;
-            background: rgba(0, 0, 0, 0.5);
-            padding: 15px;
-            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 15px;
             font-size: 14px;
+            max-width: 350px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
         }
         #info h2 {
             margin: 0 0 10px 0;
-            font-size: 18px;
+            font-size: 22px;
+            color: #fff;
+        }
+        #info p {
+            margin: 8px 0;
+            line-height: 1.6;
+        }
+        .step-number {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        #controls {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 15px;
+        }
+        button {
+            background: rgba(255, 255, 255, 0.9);
+            border: none;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        button:hover {
+            background: white;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+        }
+        button:disabled {
+            background: rgba(150, 150, 150, 0.5);
+            cursor: not-allowed;
+            transform: none;
+        }
+        .mouse-hint {
+            position: absolute;
+            bottom: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 13px;
         }
     </style>
 </head>
 <body>
+    <div id="canvas-container"></div>
+    
     <div id="info">
-        <h2>🎯 Giá Đỡ Điện Thoại 3D</h2>
-        <p>🖱️ Kéo chuột: Xoay</p>
-        <p>🔍 Lăn chuột: Thu phóng</p>
+        <div class="step-number" id="step-indicator">Bước 1/4</div>
+        <h2 id="step-title">Giới Thiệu Dự Án</h2>
+        <p id="step-description">Chào mừng bạn đến với hướng dẫn tạo giá đỡ điện thoại 3D! Chúng ta sẽ xây dựng từng phần một để tạo nên một giá đỡ hoàn chỉnh.</p>
     </div>
+
+    <div class="mouse-hint">
+        🖱️ Kéo chuột để xoay | 🔍 Lăn chuột để thu phóng
+    </div>
+    
+    <div id="controls">
+        <button id="prev-btn" onclick="previousStep()">⬅️ Quay Lại</button>
+        <button id="next-btn" onclick="nextStep()">Tiếp Theo ➡️</button>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script>
+        let currentStep = 0;
+        const steps = [
+            {
+                title: "Giới Thiệu Dự Án",
+                description: "Chào mừng bạn đến với hướng dẫn tạo giá đỡ điện thoại 3D! Chúng ta sẽ xây dựng từng phần một để tạo nên một giá đỡ hoàn chỉnh gồm: đế chắc chắn, tấm dựa phía sau và thanh chặn phía trước.",
+                showBase: false,
+                showBackSupport: false,
+                showFrontStop: false
+            },
+            {
+                title: "Bước 1: Tạo Đế",
+                description: "Đầu tiên, chúng ta tạo đế cho giá đỡ. Đế có hình chữ nhật phẳng, màu trắng sáng với độ kim loại cao, giúp giá đỡ vững chãi và có vẻ ngoài hiện đại.",
+                showBase: true,
+                showBackSupport: false,
+                showFrontStop: false
+            },
+            {
+                title: "Bước 2: Thêm Chỗ Dựa Điện Thoại",
+                description: "Tiếp theo, chúng ta thêm tấm dựa phía sau. Đây là phần để điện thoại tựa vào, được nghiêng một góc nhẹ để thuận tiện xem và sử dụng. Tấm dựa có màu xám nhạt.",
+                showBase: true,
+                showBackSupport: true,
+                showFrontStop: false
+            },
+            {
+                title: "Bước 3: Hoàn Thiện - Thanh Chặn",
+                description: "Cuối cùng, chúng ta thêm thanh ngang ở phía trước đế để chặn điện thoại không bị trượt ra. Thanh này có màu xám vừa, hoàn thiện giá đỡ điện thoại của chúng ta! 🎉",
+                showBase: true,
+                showBackSupport: true,
+                showFrontStop: true
+            }
+        ];
+
         // Khởi tạo scene, camera, renderer
         const scene = new THREE.Scene();
         scene.background = new THREE.Color(0xf0f0f0);
@@ -46,9 +150,9 @@
         const renderer = new THREE.WebGLRenderer({ antialias: true });
         renderer.setSize(window.innerWidth, window.innerHeight);
         renderer.shadowMap.enabled = true;
-        document.body.appendChild(renderer.domElement);
+        document.getElementById('canvas-container').appendChild(renderer.domElement);
         
-        // Ánh sáng - tăng độ sáng
+        // Ánh sáng
         const ambientLight = new THREE.AmbientLight(0xffffff, 0.8);
         scene.add(ambientLight);
         
@@ -57,15 +161,14 @@
         directionalLight.castShadow = true;
         scene.add(directionalLight);
         
-        // Thêm ánh sáng phụ
         const fillLight = new THREE.DirectionalLight(0xffffff, 0.5);
         fillLight.position.set(-5, 5, -5);
         scene.add(fillLight);
         
-        // Tạo giá đỡ điện thoại
+        // Tạo các phần của giá đỡ
         const standGroup = new THREE.Group();
         
-        // Đế giá đỡ (hình chữ nhật phẳng) - Nhôm trắng sáng
+        // Đế giá đỡ
         const baseGeometry = new THREE.BoxGeometry(4, 0.3, 3);
         const baseMaterial = new THREE.MeshStandardMaterial({ 
             color: 0xffffff,
@@ -78,7 +181,7 @@
         base.receiveShadow = true;
         standGroup.add(base);
         
-        // Phần dựa phía sau (tấm đứng) - Nhôm xám nhạt
+        // Phần dựa phía sau
         const backSupportGeometry = new THREE.BoxGeometry(3, 4, 0.3);
         const backSupportMaterial = new THREE.MeshStandardMaterial({ 
             color: 0xd0d0d0,
@@ -91,7 +194,7 @@
         backSupport.castShadow = true;
         standGroup.add(backSupport);
         
-        // Phần chặn phía trước (thanh ngang nhỏ) - Nhôm xám vừa
+        // Thanh chặn phía trước
         const frontStopGeometry = new THREE.BoxGeometry(3, 0.3, 0.3);
         const frontStopMaterial = new THREE.MeshStandardMaterial({ 
             color: 0xa8a8a8,
@@ -133,10 +236,8 @@
                 const deltaX = e.clientX - previousMousePosition.x;
                 const deltaY = e.clientY - previousMousePosition.y;
                 
-                // Đảo ngược hướng xoay trái phải
                 rotation.y -= deltaX * 0.01;
                 rotation.x += deltaY * 0.01;
-                
                 rotation.x = Math.max(-Math.PI / 2, Math.min(Math.PI / 2, rotation.x));
                 
                 previousMousePosition = { x: e.clientX, y: e.clientY };
@@ -160,6 +261,42 @@
             renderer.setSize(window.innerWidth, window.innerHeight);
         });
         
+        // Cập nhật hiển thị theo bước
+        function updateStep() {
+            const step = steps[currentStep];
+            
+            document.getElementById('step-indicator').textContent = `Bước ${currentStep + 1}/${steps.length}`;
+            document.getElementById('step-title').textContent = step.title;
+            document.getElementById('step-description').textContent = step.description;
+            
+            base.visible = step.showBase;
+            backSupport.visible = step.showBackSupport;
+            frontStop.visible = step.showFrontStop;
+            
+            document.getElementById('prev-btn').disabled = currentStep === 0;
+            document.getElementById('next-btn').disabled = currentStep === steps.length - 1;
+            
+            if (currentStep === steps.length - 1) {
+                document.getElementById('next-btn').textContent = '✅ Hoàn Thành';
+            } else {
+                document.getElementById('next-btn').textContent = 'Tiếp Theo ➡️';
+            }
+        }
+        
+        function nextStep() {
+            if (currentStep < steps.length - 1) {
+                currentStep++;
+                updateStep();
+            }
+        }
+        
+        function previousStep() {
+            if (currentStep > 0) {
+                currentStep--;
+                updateStep();
+            }
+        }
+        
         // Animation loop
         function animate() {
             requestAnimationFrame(animate);
@@ -173,6 +310,8 @@
             renderer.render(scene, camera);
         }
         
+        // Khởi động
+        updateStep();
         animate();
     </script>
 </body>
