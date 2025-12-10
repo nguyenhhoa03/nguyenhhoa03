@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farming Wordle 🌾</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background: linear-gradient(135deg, #a8e063 0%, #56ab2f 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 30px;
+            padding: 40px;
+            box-shadow: 0 15px 60px rgba(0,0,0,0.25);
+            max-width: 1400px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 400px 1fr;
+            gap: 40px;
+        }
+
+        .left-panel {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .header {
+            text-align: center;
+        }
+
+        h1 {
+            color: #56ab2f;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.1);
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1.1em;
+        }
+
+        .history {
+            background: #f0f8ff;
+            border-radius: 20px;
+            padding: 25px;
+            flex: 1;
+            overflow-y: auto;
+            max-height: 500px;
+        }
+
+        .history h3 {
+            color: #56ab2f;
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+
+        .history-words {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .history-word {
+            background: white;
+            padding: 10px 18px;
+            border-radius: 15px;
+            font-size: 1.1em;
+            color: #333;
+            border: 3px solid #a8e063;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .right-panel {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .feedback {
+            min-height: 70px;
+        }
+
+        .feedback-item {
+            padding: 12px 20px;
+            border-radius: 15px;
+            margin-bottom: 10px;
+            font-size: 1em;
+            animation: slideIn 0.3s ease;
+            font-weight: 600;
+        }
+
+        .feedback-correct {
+            background: #d4edda;
+            color: #155724;
+            border-left: 4px solid #6aaa64;
+        }
+
+        .feedback-present {
+            background: #fff3cd;
+            color: #856404;
+            border-left: 4px solid #c9b458;
+        }
+
+        .feedback-absent {
+            background: #f8d7da;
+            color: #721c24;
+            border-left: 4px solid #787c7e;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .message {
+            text-align: center;
+            padding: 15px;
+            border-radius: 20px;
+            margin-bottom: 15px;
+            font-weight: bold;
+            font-size: 1.1em;
+            display: none;
+        }
+
+        .message.show {
+            display: block;
+            animation: slideIn 0.3s ease;
+        }
+
+        .message.success {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .message.error {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        .message.info {
+            background: #d1ecf1;
+            color: #0c5460;
+        }
+
+        .game-board {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 20px;
+        }
+
+        .guess-row {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .letter-box {
+            width: 60px;
+            height: 60px;
+            border: 4px solid #ddd;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8em;
+            font-weight: bold;
+            text-transform: uppercase;
+            background: white;
+            transition: all 0.3s ease;
+        }
+
+        .letter-box.correct {
+            background: #6aaa64;
+            color: white;
+            border-color: #6aaa64;
+            animation: flip 0.5s ease;
+        }
+
+        .letter-box.present {
+            background: #c9b458;
+            color: white;
+            border-color: #c9b458;
+            animation: flip 0.5s ease;
+        }
+
+        .letter-box.absent {
+            background: #787c7e;
+            color: white;
+            border-color: #787c7e;
+            animation: flip 0.5s ease;
+        }
+
+        @keyframes flip {
+            0% { transform: rotateX(0); }
+            50% { transform: rotateX(90deg); }
+            100% { transform: rotateX(0); }
+        }
+
+        .input-section {
+            display: flex;
+            gap: 12px;
+        }
+
+        input {
+            flex: 1;
+            padding: 15px 20px;
+            border: 4px solid #a8e063;
+            border-radius: 15px;
+            font-size: 1.2em;
+            font-family: inherit;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #56ab2f;
+            box-shadow: 0 0 0 3px rgba(168, 224, 99, 0.3);
+        }
+
+        button {
+            padding: 15px 35px;
+            background: linear-gradient(135deg, #a8e063 0%, #56ab2f 100%);
+            color: white;
+            border: none;
+            border-radius: 15px;
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            font-family: inherit;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(86, 171, 47, 0.4);
+        }
+
+        button:active {
+            transform: scale(0.98);
+        }
+
+        .new-game-btn {
+            width: 100%;
+            padding: 18px;
+            font-size: 1.3em;
+        }
+
+        .stats {
+            text-align: center;
+            color: #666;
+            margin-top: 15px;
+            font-size: 1em;
+            font-weight: 500;
+        }
+
+        .hint {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 0.8em;
+            color: #999;
+            font-family: monospace;
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 1200px) {
+            .container {
+                grid-template-columns: 1fr;
+                max-width: 700px;
+            }
+            
+            .history {
+                max-height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <div class="header">
+                <h1>🌾 Farming Wordle 🌱</h1>
+                <p class="subtitle">Guess the farming word!</p>
+            </div>
+
+            <div class="history">
+                <h3>📚 Previous Words:</h3>
+                <div class="history-words" id="historyWords">
+                    <span class="history-word">Start playing!</span>
+                </div>
+            </div>
+
+            <button class="new-game-btn" onclick="newGame()">🎮 New Game</button>
+        </div>
+
+        <div class="right-panel">
+            <div class="message" id="message"></div>
+            
+            <div class="feedback" id="feedback"></div>
+
+            <div class="game-board" id="gameBoard"></div>
+
+            <div class="input-section">
+                <input type="text" id="guessInput" maxlength="10" placeholder="Enter your guess..." autocomplete="off">
+                <button onclick="makeGuess()">Guess 🎯</button>
+            </div>
+
+            <div class="stats" id="stats"></div>
+            <div class="hint" id="hint"></div>
+        </div>
+    </div>
+
+    <script>
+        const words = `Farming provides us with the food that we eat every day. But farming activities also have a strong warming impact on the global temperature. The good news is that experts have already started thinking about how to reduce it. Raising farm animals like cows, goats, and sheep makes the planet hotter. There are billions of them and they release methane, a greenhouse gas that is much more dangerous than carbon dioxide. That is why scientists are developing methane-catching face masks for cows. They are intended to reduce methane emissions by up to 50 per cent per cow. Another farming activity that heats the atmosphere is growing rice. According to research, emissions from rice farms have the same warming effect as about 600 coal plants. Flooded rice fields also make it easier for soil bacteria to produce greenhouse gases. New farming methods have allowed rice to grow well in drier fields, limit the amount of greenhouse gases, use less water, and produce better crops. In addition, land-use increases the global temperature. Plants and trees use CO, to grow and store large amounts of carbon underground. Cutting down or burning forests to create farm fields and land for feeding animals releases tonnes of carbon dioxide and other greenhouse gases into the atmosphere every year. Luckily, many countries and world leaders have agreed to protect the forests and end deforestation. In short, there are some positive signs that farmers can meet the environmental challenges. However, although the impact of farming on the global temperature has been reduced, there is still much to do.`
+            .toLowerCase()
+            .match(/\b[a-z]+\b/g)
+            .filter((word, index, self) => word.length >= 4 && word.length <= 10 && self.indexOf(word) === index);
+
+        let targetWord = '';
+        let currentGuess = 0;
+        let maxGuesses = 6;
+        let gameOver = false;
+        let guessHistory = [];
+        let allGuesses = [];
+
+        function initGame() {
+            targetWord = words[Math.floor(Math.random() * words.length)];
+            currentGuess = 0;
+            gameOver = false;
+            maxGuesses = 6;
+            allGuesses = [];
+            
+            createBoard();
+            updateStats();
+            updateHint();
+            document.getElementById('guessInput').value = '';
+            document.getElementById('guessInput').focus();
+            document.getElementById('feedback').innerHTML = '';
+            hideMessage();
+        }
+
+        function createBoard() {
+            const board = document.getElementById('gameBoard');
+            board.innerHTML = '';
+            
+            for (let i = 0; i < maxGuesses; i++) {
+                const row = document.createElement('div');
+                row.className = 'guess-row';
+                
+                for (let j = 0; j < targetWord.length; j++) {
+                    const box = document.createElement('div');
+                    box.className = 'letter-box';
+                    box.id = `box-${i}-${j}`;
+                    row.appendChild(box);
+                }
+                
+                board.appendChild(row);
+            }
+        }
+
+        function makeGuess() {
+            const input = document.getElementById('guessInput');
+            const guess = input.value.toLowerCase().trim();
+
+            if (guess.length !== targetWord.length) {
+                showMessage(`Please enter a ${targetWord.length}-letter word! 📏`, 'error');
+                return;
+            }
+
+            allGuesses.push(guess);
+            
+            if (allGuesses.length > maxGuesses) {
+                allGuesses.shift();
+            }
+
+            updateBoard();
+            const feedback = analyzeFeedback(guess);
+            displayFeedback(feedback);
+            input.value = '';
+
+            if (guess === targetWord && !gameOver) {
+                gameOver = true;
+                guessHistory.push(targetWord);
+                updateHistory();
+                showMessage(`🎉 Congratulations! You found the word: ${targetWord.toUpperCase()}!`, 'success');
+            }
+
+            updateStats();
+        }
+
+        function analyzeFeedback(guess) {
+            const targetLetters = targetWord.split('');
+            const guessLetters = guess.split('');
+            const letterCount = {};
+
+            targetLetters.forEach(letter => {
+                letterCount[letter] = (letterCount[letter] || 0) + 1;
+            });
+
+            const result = [];
+            let correctCount = 0;
+            let presentCount = 0;
+            let absentCount = 0;
+
+            guessLetters.forEach((letter, i) => {
+                if (letter === targetLetters[i]) {
+                    result.push({ letter, status: 'correct' });
+                    correctCount++;
+                    letterCount[letter]--;
+                } else {
+                    result.push({ letter, status: 'pending' });
+                }
+            });
+
+            result.forEach((item, i) => {
+                if (item.status === 'pending') {
+                    if (targetLetters.includes(item.letter) && letterCount[item.letter] > 0) {
+                        item.status = 'present';
+                        presentCount++;
+                        letterCount[item.letter]--;
+                    } else {
+                        item.status = 'absent';
+                        absentCount++;
+                    }
+                }
+            });
+
+            return { result, correctCount, presentCount, absentCount };
+        }
+
+        function displayFeedback(feedback) {
+            const feedbackDiv = document.getElementById('feedback');
+            feedbackDiv.innerHTML = '';
+
+            if (feedback.correctCount > 0) {
+                const div = document.createElement('div');
+                div.className = 'feedback-item feedback-correct';
+                div.textContent = `✓ ${feedback.correctCount} letter${feedback.correctCount > 1 ? 's' : ''} correct position!`;
+                feedbackDiv.appendChild(div);
+            }
+
+            if (feedback.presentCount > 0) {
+                const div = document.createElement('div');
+                div.className = 'feedback-item feedback-present';
+                div.textContent = `⚠ ${feedback.presentCount} letter${feedback.presentCount > 1 ? 's' : ''} in word, wrong position!`;
+                feedbackDiv.appendChild(div);
+            }
+
+            if (feedback.absentCount > 0) {
+                const div = document.createElement('div');
+                div.className = 'feedback-item feedback-absent';
+                div.textContent = `✗ ${feedback.absentCount} letter${feedback.absentCount > 1 ? 's' : ''} not in word!`;
+                feedbackDiv.appendChild(div);
+            }
+        }
+
+        function updateBoard() {
+            const board = document.getElementById('gameBoard');
+            board.innerHTML = '';
+            
+            const displayGuesses = allGuesses.slice(-maxGuesses);
+            
+            for (let i = 0; i < maxGuesses; i++) {
+                const row = document.createElement('div');
+                row.className = 'guess-row';
+                
+                for (let j = 0; j < targetWord.length; j++) {
+                    const box = document.createElement('div');
+                    box.className = 'letter-box';
+                    
+                    if (i < displayGuesses.length) {
+                        const guess = displayGuesses[i];
+                        const feedback = analyzeFeedback(guess);
+                        
+                        box.textContent = guess[j].toUpperCase();
+                        box.classList.add(feedback.result[j].status);
+                    }
+                    
+                    row.appendChild(box);
+                }
+                
+                board.appendChild(row);
+            }
+        }
+
+        function updateHistory() {
+            const historyDiv = document.getElementById('historyWords');
+            historyDiv.innerHTML = '';
+            
+            const displayWords = guessHistory.slice(-10);
+            displayWords.forEach(word => {
+                const span = document.createElement('span');
+                span.className = 'history-word';
+                span.textContent = word.toUpperCase();
+                historyDiv.appendChild(span);
+            });
+        }
+
+        function updateStats() {
+            const stats = document.getElementById('stats');
+            stats.textContent = `Word length: ${targetWord.length} letters | Total guesses: ${allGuesses.length}`;
+        }
+
+        function updateHint() {
+            const hint = document.getElementById('hint');
+            const encoded = btoa(targetWord);
+            hint.textContent = `Hint: ${encoded}`;
+        }
+
+        function showMessage(text, type) {
+            const message = document.getElementById('message');
+            message.textContent = text;
+            message.className = `message ${type} show`;
+        }
+
+        function hideMessage() {
+            const message = document.getElementById('message');
+            message.className = 'message';
+        }
+
+        function newGame() {
+            initGame();
+            showMessage('New game started! Good luck! 🍀', 'info');
+        }
+
+        document.getElementById('guessInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                makeGuess();
+            }
+        });
+
+        document.getElementById('guessInput').addEventListener('input', function(e) {
+            this.value = this.value.replace(/[^a-zA-Z]/g, '');
+        });
+
+        initGame();
+    </script>
+</body>
+</html>
