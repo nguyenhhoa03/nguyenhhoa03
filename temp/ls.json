@@ -1,0 +1,654 @@
+{
+  "exam_title": "NỘI DUNG ÔN TẬP DÀNH CHO HỌC SINH",
+  "topics": [
+    {
+      "topic_id": 1,
+      "topic_name": "CÁCH MẠNG TƯ SẢN VÀ SỰ PHÁT TRIỂN CỦA CNTB",
+      "sections": [
+        {
+          "section_id": "A",
+          "section_name": "MỘT SỐ VẤN ĐỀ CHUNG VỀ CÁCH MẠNG TƯ SẢN",
+          "parts": [
+            {
+              "part_name": "Phần I. Câu trắc nghiệm nhiều phương án lựa chọn",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "Cuộc đấu tranh giành độc lập của 13 thuộc địa Anh ở Bắc Mỹ bùng nổ vào cuối thế kỉ XVIII dựa trên tiền đề kinh tế như thế nào?",
+                  "options": {
+                    "A": "Kinh tế tư bản chủ nghĩa ở Bắc Mỹ bị kìm hãm bởi chế độ cai trị của thực dân Anh.",
+                    "B": "Chế độ phong kiến chuyên chế đã cản trở sự phát triển của kinh tế tư bản chủ nghĩa.",
+                    "C": "Phong trào \"rào đất cướp ruộng\" của quý tộc đã đẩy nông dân vào tình cảnh khổ cực.",
+                    "D": "Sự tồn tại của chế độ nô lệ đã kìm hãm sự phát triển của nền kinh tế tư bản chủ nghĩa."
+                  },
+                  "correct_answer": "A"
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "Nội dung nào sau đây không phản ánh đúng tình hình kinh tế nước Pháp vào cuối thế kỉ XVIII?",
+                  "options": {
+                    "A": "Kinh tế công thương nghiệp phát triển mạnh theo hướng tư bản chủ nghĩa.",
+                    "B": "Nền kinh tế tư bản chủ nghĩa bị kìm hãm bởi chế độ phong kiến chuyên chế.",
+                    "C": "Nông nghiệp lạc hậu: năng suất cây trồng thấp; diện tích đất bỏ hoang nhiều,…",
+                    "D": "Phong trào \"rào đất cướp ruộng\" diễn ra mạnh mẽ khiến 3 triệu nông dân mất đất."
+                  },
+                  "correct_answer": "D"
+                },
+                {
+                  "question_number": 3,
+                  "question_text": "Một trong những đại diện tiêu biểu của trào lưu Triết học Ánh sáng ở Pháp (thế kỉ XVIII) là",
+                  "options": {
+                    "A": "Ph.Vôn-te.",
+                    "B": "A.Xmit.",
+                    "C": "Ph.Ăng-ghen.",
+                    "D": "Xanh-xi-mông."
+                  },
+                  "correct_answer": "A"
+                },
+                {
+                  "question_number": 4,
+                  "question_text": "Một trong những nhiệm vụ dân chủ của các cuộc cách mạng tư sản thời cận đại là",
+                  "options": {
+                    "A": "giải phóng dân tộc.",
+                    "B": "xác lập nền dân chủ tư sản.",
+                    "C": "thống nhất thị trường dân tộc.",
+                    "D": "xóa bỏ tình trạng phong kiến cát cứ."
+                  },
+                  "correct_answer": "B"
+                },
+                {
+                  "question_number": 5,
+                  "question_text": "Cuộc Cách mạng tư sản Anh (thế kỉ XVII) đã đạt được kết quả nào sau đây?",
+                  "options": {
+                    "A": "Lật đổ sự thống trị của thực dân của Anh, giành độc lập dân tộc.",
+                    "B": "Bảo vệ độc lập dân tộc trước sự nhòm ngó của thực dân phương Tây.",
+                    "C": "Lật đổ chế độ quân chủ chuyên chế, thiết lập chế độ quân chủ lập hiến.",
+                    "D": "Lật đổ chế độ phong kiến chuyên chế, xây dựng nền cộng hòa dân chủ."
+                  },
+                  "correct_answer": "C"
+                },
+                {
+                  "question_number": 6,
+                  "question_text": "Điểm tương đồng giữa Cách mạng tư sản Anh, Chiến tranh giành độc lập của 13 thuộc địa Anh ở Bắc Mỹ và Cách mạng tư sản Pháp là gì?",
+                  "options": {
+                    "A": "Giai cấp tư sản độc quyền lãnh đạo cách mạng.",
+                    "B": "Mở đường cho sự phát triển của chủ nghĩa tư bản.",
+                    "C": "Sau cách mạng, chế độ quân chủ lập hiến được thiết lập.",
+                    "D": "Sử dụng tôn giáo cải cách làm \"ngọn cờ\" tập hợp lực lượng."
+                  },
+                  "correct_answer": "B"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "section_id": "B",
+          "section_name": "SỰ XÁC LẬP VÀ PHÁT TRIỂN CỦA CHỦ NGHĨA TƯ BẢN",
+          "parts": [
+            {
+              "part_name": "Phần I. Câu trắc nghiệm nhiều phương án lựa chọn",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "Nửa sau thế kỉ XIX, chủ nghĩa tư bản chính thức được xác lập ở",
+                  "options": {
+                    "A": "Hà Lan và Anh.",
+                    "B": "I-ta-lia-a và Đức.",
+                    "C": "Anh và Nga.",
+                    "D": "châu Âu và Bắc Mỹ."
+                  },
+                  "correct_answer": "D"
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "Trong những năm cuối thế kỉ XIX - đầu thế kỉ XX, cùng với việc các nước đế quốc đẩy mạnh xâm lược thuộc địa, chủ nghĩa tư bản đã",
+                  "options": {
+                    "A": "được xác lập ở châu Âu và khu vực Bắc Mỹ.",
+                    "B": "được xác lập ở các quốc gia: Pháp, Đức, I-ta-li-a.",
+                    "C": "mở rộng phạm vi ảnh hưởng trên toàn thế giới.",
+                    "D": "suy yếu và bị thu hẹp phạm vi ảnh hưởng."
+                  },
+                  "correct_answer": "C"
+                },
+                {
+                  "question_number": 3,
+                  "question_text": "Sự phát triển của chủ nghĩa tư bản diễn ra theo trình tự nào sau đây?",
+                  "options": {
+                    "A": "CNTB tự do cạnh tranh => CNTB độc quyền => CNTB hiện đại.",
+                    "B": "CNTB độc quyền => CNTB hiện đại => CNTB tự do cạnh tranh.",
+                    "C": "CNTB tự do cạnh tranh => CNTB hiện đại => CNTB độc quyền.",
+                    "D": "CNTB hiện đại => CNTB độc quyền => CNTB tự do cạnh tranh."
+                  },
+                  "correct_answer": "A"
+                },
+                {
+                  "question_number": 4,
+                  "question_text": "Một trong những đặc điểm của chủ nghĩa đế quốc là",
+                  "options": {
+                    "A": "việc xuất khẩu tư bản khác với xuất khẩu hàng hóa đã có ý nghĩa quan trọng đặc biệt.",
+                    "B": "chủ nghĩa tư bản độc quyền nhà nước và cao hơn là độc quyền xuyên quốc gia.",
+                    "C": "lực lượng lao động có những chuyển biến về cơ cấu, trình độ chuyên môn, nghiệp vụ.",
+                    "D": "có sức sản xuất phát triển cao trên cơ sở thành tựu của cách mạng khoa học - công nghệ."
+                  },
+                  "correct_answer": "A"
+                },
+                {
+                  "question_number": 5,
+                  "question_text": "Nội dung nào sau đây phản ánh đúng đặc trưng của chủ nghĩa tư bản hiện đại?",
+                  "options": {
+                    "A": "Sự dung hợp tư bản ngân hàng với tư bản công nghiệp thành tư bản tài chính.",
+                    "B": "Xuất hiện các tổ chức độc quyền có vai trò quyết định trong sinh hoạt kinh tế.",
+                    "C": "Các cường quốc tư bản lớn nhất đã chia nhau xong đất đai trên thế giới.",
+                    "D": "Chủ nghĩa tư bản không ngừng điều chỉnh và thích ứng để tồn tại và phát triển trong bối cảnh mới."
+                  },
+                  "correct_answer": "D"
+                },
+                {
+                  "question_number": 6,
+                  "question_text": "Nội dung nào sau đây không phản ánh đúng thách thức của chủ nghĩa tư bản hiện đại?",
+                  "options": {
+                    "A": "Tiềm ẩn những nguy cơ khủng hoảng mang tính toàn cầu.",
+                    "B": "Các thiết chế dân chủ vẫn còn nhiều vấn đề bất ổn.",
+                    "C": "Phải đối mặt với nhiều vấn đề an ninh phi truyền thống.",
+                    "D": "Lực lượng lao động có trình độ chuyên môn yếu kém."
+                  },
+                  "correct_answer": "D"
+                }
+              ]
+            },
+            {
+              "part_name": "Phần II. Câu trắc nghiệm đúng - sai",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "Đọc đoạn thông tin sau đây: \"Sự tập trung sản xuất và tư bản đã phát triển tới một trình độ cao, tạo ra các tổ chức độc quyền có vai trò quyết định trong đời sống kinh tế; tư bản ngân hàng dung hợp với tư bản công nghiệp, tạo thành tư bản tài chính; xuất khẩu tư bản trở nên đặc biệt quan trọng; các tổ chức độc quyền quốc tế được hình thành và việc phân chia thế giới giữa các cường quốc tư bản đã hoàn thành.\" Đoạn tư liệu trên phản ánh nội dung nào của quá trình chuyển biến từ chủ nghĩa tư bản tự do cạnh tranh sang chủ nghĩa tư bản độc quyền?",
+                  "statements": {
+                    "a": "Sự ra đời của chủ nghĩa tư bản tự do cạnh tranh nhà nước.",
+                    "b": "Sự phát triển của các tổ chức độc quyền và tư bản tài chính đã làm cho chủ nghĩa tư bản tự do cạnh tranh chuyển sang giai đoạn độc quyền.",
+                    "c": "Sự tập trung sản xuất và tư bản là nguyên nhân trực tiếp làm thay đổi bản chất của chủ nghĩa tư bản, dẫn đến sự hình thành chủ nghĩa tư bản độc quyền.",
+                    "d": "Quá trình chuyển biến từ chủ nghĩa tư bản tự do cạnh tranh sang chủ nghĩa tư bản độc quyền không chỉ làm biến đổi cơ cấu kinh tế mà còn thúc đẩy xu hướng phân chia thế giới giữa các cường quốc tư bản, làm gia tăng nguy cơ xung đột và chiến tranh"
+                  },
+                  "correct_answers": {
+                    "a": "Sai",
+                    "b": "Đúng",
+                    "c": "Đúng",
+                    "d": "Đúng"
+                  }
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "Đọc đoạn tư liệu sau đây: \"Chủ nghĩa tư bản hiện đại đã tạo ra lực lượng sản xuất to lớn nhờ tiến bộ khoa học – công nghệ, toàn cầu hóa và sự phát triển của kinh tế tri thức. Tuy nhiên, cùng với đó là sự gia tăng bất bình đẳng xã hội, các cuộc khủng hoảng kinh tế mang tính chu kì, sự cạn kiệt tài nguyên và những thách thức toàn cầu như biến đổi khí hậu.\"",
+                  "statements": {
+                    "a": "Chủ nghĩa tư bản hiện đại có tiềm năng lớn trong việc phát triển lực lượng sản xuất nhờ khoa học – công nghệ.",
+                    "b": "Toàn cầu hóa và kinh tế tri thức chỉ mang lại lợi ích, không tạo ra thách thức xã hội cho các nước tư bản hiện đại.",
+                    "c": "Những cuộc khủng hoảng kinh tế chu kì cho thấy chủ nghĩa tư bản hiện đại vẫn tồn tại các mâu thuẫn nội tại chưa được giải quyết triệt để.",
+                    "d": "Các thách thức toàn cầu như biến đổi khí hậu và cạn kiệt tài nguyên chỉ là vấn đề riêng của các nước đang phát triển, không xuất phát từ mô hình phát triển tư bản chủ nghĩa."
+                  },
+                  "correct_answers": {
+                    "a": "Đúng",
+                    "b": "Sai",
+                    "c": "Đúng",
+                    "d": "Sai"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic_id": 2,
+      "topic_name": "CHỦ NGHĨA XÃ HỘI TỪ NĂM 1917 ĐẾN NAY",
+      "sections": [
+        {
+          "section_id": "A",
+          "section_name": "SỰ HÌNH THÀNH LIÊN BANG CỘNG HÒA XHCN XÔ VIẾT",
+          "parts": [
+            {
+              "part_name": "Phần I. Câu trắc nghiệm nhiều phương án lựa chọn",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "Sự ra đời của chính quyền Xô viết ở Nga gắn liền với sự kiện nào sau đây?",
+                  "options": {
+                    "A": "Cách mạng tháng Hai ở Nga thành công (1917).",
+                    "B": "Cách mạng tháng Mười ở Nga thành công (1917).",
+                    "C": "Nước Nga Xô viết và các nước cộng hòa Xô viết liên minh với nhau và đánh bại kẻ thù chung (1920).",
+                    "D": "Ban hành hiến pháp mới (1924)."
+                  },
+                  "correct_answer": "B"
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "Đến năm 1940, Liên bang Cộng hòa xã hội chủ nghĩa Xô viết bao gồm bao nhiêu nước cộng hòa?",
+                  "options": {
+                    "A": "11 nước.",
+                    "B": "15 nước.",
+                    "C": "4 nước.",
+                    "D": "10 nước."
+                  },
+                  "correct_answer": "A"
+                },
+                {
+                  "question_number": 3,
+                  "question_text": "Sau thắng lợi của Cách mạng tháng Mười Nga, nhiệm vụ hàng đầu của Chính quyền Xô viết là:",
+                  "options": {
+                    "A": "Xóa bỏ bộ máy của Chính phủ lâm thời và thành lập Chính phủ Xô viết.",
+                    "B": "Khôi phục kinh tế, xây dựng chủ nghĩa xã hội và bảo vệ đất nước.",
+                    "C": "Ban hành Hiến pháp mới.",
+                    "D": "Chống thù trong, giặc ngoài."
+                  },
+                  "correct_answer": "A"
+                },
+                {
+                  "question_number": 4,
+                  "question_text": "Khi mới thành lập, Liên Xô gồm 4 nước Cộng hoà Xô viết là:",
+                  "options": {
+                    "A": "Nga, Ukraine, Belarus và Litva.",
+                    "B": "Nga, Ukraine, Belarus và Ngoại Cáp–ca-dơ.",
+                    "C": "Nga, Ukraine, Moldova và Latvia."
+                  },
+                  "correct_answer": "B"
+                },
+                {
+                  "question_number": 5,
+                  "question_text": "Ý nào không phải là ý nghĩa đối với trong nước của việc thành lập Liên bang Cộng hoà xã hội chủ nghĩa Xô viết?",
+                  "options": {
+                    "A": "Đánh dấu sự sụp đổ hoàn toàn của đế quốc Nga và Chính phủ lâm thời của giai cấp tư sản.",
+                    "B": "Thể hiện quyền dân tộc tự quyết, sự liên minh đoàn kết của các nước cộng hòa Xô viết đồng minh.",
+                    "C": "Tạo nên sức mạnh tổng hợp để nhân dân Liên Xô tập trung vào xây dựng chủ nghĩa xã hội và bảo vệ đất nước, chiến thắng ngoại xâm.",
+                    "D": "Khẳng định công cuộc xây dựng chủ nghĩa xã hội ở Liên Xô đã hoàn thành."
+                  },
+                  "correct_answer": "D"
+                },
+                {
+                  "question_number": 6,
+                  "question_text": "Đối với quốc tế, sự ra đời của Liên bang Cộng hoà xã hội chủ nghĩa Xô viết có ý nghĩa như thế nào?",
+                  "options": {
+                    "A": "Làm thất bại ý đồ và hành động chia rẽ của các thế lực thù địch.",
+                    "B": "Chứng minh tính khoa học, đúng đắn của chủ nghĩa Mác - Lênin.",
+                    "C": "Củng cố và tăng cường vị thế của Liên Xô trên trường quốc tế.",
+                    "D": "Tạo điều kiện để các nước cộng hòa phát triển kinh tế - xã hội."
+                  },
+                  "correct_answer": "B"
+                }
+              ]
+            },
+            {
+              "part_name": "Phần II. Câu trắc nghiệm đúng sai",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "Đọc đoạn tư liệu sau đây: \"Liên bang Cộng hòa Xã hội Chủ nghĩa Xô viết được thành lập chính thức vào ngày 30 tháng 12 năm 1922, khi đại biểu của bốn nước cộng hòa Xô viết - Nga Xô viết (RSFSR), Ukraina Xô viết, Byelorussia Xô viết và Transcaucasian Xô viết - ký và phê chuẩn Tuyên ngôn cùng Hiệp ước về thành lập Liên bang Xô viết tại Moskva. Sự kiện này được xác nhận bởi Đại hội Xô viết toàn Liên bang đầu tiên và đã tạo ra một nhà nước liên bang thống nhất trên cơ sở bình đẳng và tự nguyện của các nước cộng hòa thành viên. Sự thành lập này là bước quan trọng đánh dấu quá trình hình thành nhà nước xã hội chủ nghĩa đầu tiên trên thế giới.\"",
+                  "statements": {
+                    "a": "Liên bang Cộng hòa Xã hội Chủ nghĩa Xô viết chính thức thành lập vào ngày 30/12/1922.",
+                    "b": "Chỉ có ba nước cộng hòa Xô viết tham gia ký Hiệp ước thành lập Liên Xô.",
+                    "c": "Sự thành lập Liên Xô xảy ra ngay sau Cách mạng Tháng Mười năm 1917.",
+                    "d": "Việc liên kết các nước cộng hòa Xô viết vào Liên Xô diễn ra trên nguyên tắc tự nguyện và bình đẳng."
+                  },
+                  "correct_answers": {
+                    "a": "Đúng",
+                    "b": "Sai",
+                    "c": "Sai",
+                    "d": "Đúng"
+                  }
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "Đọc đoạn tư liệu sau đây: \"Liên Xô, nhà nước chuyên chính vô sản đầu tiên, ngay từ khi mới thành lập đã đánh bại các lực lượng phản cách mạng trong nước và ngăn chặn can thiệp quân sự của 14 nước đế quốc. Trong vòng chưa đầy 30 năm, Liên Xô đã tham gia đánh bại phát xít Đức, Ý và Nhật, bảo vệ thành công nhà nước Xô viết, đồng thời góp phần giải phóng nhiều nước khác và chống lại chủ nghĩa phát xít toàn cầu.\"",
+                  "statements": {
+                    "a": "Liên Xô là nhà nước chuyên chính vô sản đầu tiên trên thế giới.",
+                    "b": "Liên Xô ngay từ khi thành lập đã đánh bại các lực lượng phản cách mạng trong nước và ngăn chặn can thiệp quân sự của 14 nước đế quốc.",
+                    "c": "Trong vòng chưa đầy 30 năm, Liên Xô chỉ bảo vệ nhà nước Xô viết mà không tham gia đánh bại phát xít Đức, Ý, Nhật.",
+                    "d": "Chiến thắng của Liên Xô trước các nước phát xít chỉ có ý nghĩa đối với nước này, không ảnh hưởng tới các nước khác hoặc phong trào chống chủ nghĩa phát xít toàn cầu."
+                  },
+                  "correct_answers": {
+                    "a": "Đúng",
+                    "b": "Đúng",
+                    "c": "Sai",
+                    "d": "Sai"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "section_id": "B",
+          "section_name": "SỰ PHÁT TRIỂN CỦA CHỦ NGHĨA XÃ HỘI TỪ SAU CHIẾN TRANH THẾ GIỚI THỨ HAI ĐẾN NAY",
+          "parts": [
+            {
+              "part_name": "Phần I. Câu trắc nghiệm nhiều phương án lựa chọn",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "Sau Chiến tranh thế giới thứ hai, các nước Đông Âu chịu ảnh hưởng của quốc gia nào trong việc xây dựng chủ nghĩa xã hội?",
+                  "options": {
+                    "A": "Mỹ.",
+                    "B": "Liên Xô.",
+                    "C": "Trung Quốc.",
+                    "D": "Anh."
+                  },
+                  "correct_answer": "B"
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "Sau Chiến tranh thế giới thứ hai, nước nào trở thành quốc gia xã hội chủ nghĩa đầu tiên ở Đông Nam Á?",
+                  "options": {
+                    "A": "Việt Nam.",
+                    "B": "Lào.",
+                    "C": "Campuchia.",
+                    "D": "Thái Lan."
+                  },
+                  "correct_answer": "A"
+                },
+                {
+                  "question_number": 3,
+                  "question_text": "Trong các quốc gia xã hội chủ nghĩa, hình thức kinh tế phổ biến sau chiến tranh là:",
+                  "options": {
+                    "A": "Kinh tế thị trường tự do.",
+                    "B": "Kinh tế tập trung, kế hoạch hóa.",
+                    "C": "Kinh tế hỗn hợp.",
+                    "D": "Kinh tế tư nhân hoàn toàn."
+                  },
+                  "correct_answer": "B"
+                },
+                {
+                  "question_number": 4,
+                  "question_text": "Sau Chiến tranh thế giới thứ hai, quốc gia nào trở thành trung tâm lãnh đạo các nước xã hội chủ nghĩa trên thế giới?",
+                  "options": {
+                    "A": "Mỹ.",
+                    "B": "Liên Xô.",
+                    "C": "Trung Quốc.",
+                    "D": "Anh."
+                  },
+                  "correct_answer": "B"
+                },
+                {
+                  "question_number": 5,
+                  "question_text": "Nguyên nhân chủ yếu khiến nhiều nước Đông Âu từ bỏ mô hình xã hội chủ nghĩa là:",
+                  "options": {
+                    "A": "Chiến tranh tàn phá nặng nề.",
+                    "B": "Áp lực từ Liên Hợp Quốc.",
+                    "C": "Khủng hoảng kinh tế và mất lòng dân.",
+                    "D": "Thiếu lãnh đạo tài năng."
+                  },
+                  "correct_answer": "C"
+                },
+                {
+                  "question_number": 6,
+                  "question_text": "Nổi bật trong chính sách cải cách ở Liên Xô cuối thập niên 1980 là:",
+                  "options": {
+                    "A": "Công nghiệp hóa nhanh.",
+                    "B": "Chính sách cải tổ.",
+                    "C": "Tăng cường kế hoạch hóa tập trung.",
+                    "D": "Mở rộng các quốc gia vệ tinh."
+                  },
+                  "correct_answer": "B"
+                },
+                {
+                  "question_number": 7,
+                  "question_text": "Điểm khác biệt cơ bản giữa các nước xã hội chủ nghĩa Đông Âu và Trung Quốc trong giai đoạn cải cách là:",
+                  "options": {
+                    "A": "Trung Quốc vẫn duy trì kinh tế tập trung hoàn toàn.",
+                    "B": "Trung Quốc thực hiện cải cách kinh tế nhưng vẫn giữ quyền lực chính trị tập trung trong tay Đảng cộng sản Trung Quốc.",
+                    "C": "Các nước Đông Âu duy trì chính sách kinh tế thị trường tự do.",
+                    "D": "Không có sự khác biệt."
+                  },
+                  "correct_answer": "B"
+                },
+                {
+                  "question_number": 8,
+                  "question_text": "Nếu một nước xã hội chủ nghĩa muốn duy trì tăng trưởng kinh tế nhưng vẫn giữ chế độ chính trị tập trung, nước đó nên:",
+                  "options": {
+                    "A": "Thực hiện cải cách về kinh tế nhưng hạn chế cải cách về chính trị.",
+                    "B": "Chuyển sang kinh tế thị trường hoàn toàn.",
+                    "C": "Tăng cường kế hoạch hóa tập trung.",
+                    "D": "Chuyển sang chế độ đa đảng."
+                  },
+                  "correct_answer": "A"
+                },
+                {
+                  "question_number": 9,
+                  "question_text": "Khi nghiên cứu lịch sử Đông Âu, học sinh có thể thấy rằng nguyên nhân chính khiến các nước này chuyển đổi sang kinh tế thị trường là:",
+                  "options": {
+                    "A": "Áp lực quân sự.",
+                    "B": "Khủng hoảng kinh tế kéo dài và nhân dân bất mãn, mất lòng tin.",
+                    "C": "Tác động của chiến tranh lạnh.",
+                    "D": "Mất lãnh thổ."
+                  },
+                  "correct_answer": "B"
+                },
+                {
+                  "question_number": 10,
+                  "question_text": "Việc Việt Nam thực hiện đổi mới kinh tế từ năm 1986 thể hiện:",
+                  "options": {
+                    "A": "Chuyển sang xã hội chủ nghĩa hoàn toàn.",
+                    "B": "Thực hiện đa đảng và kinh tế tư nhân.",
+                    "C": "Chuyển sang kinh tế tư bản chủ nghĩa.",
+                    "D": "Xây dựng nền kinh tế thị trường, định hướng XHCN và hội nhập quốc tế."
+                  },
+                  "correct_answer": "D"
+                },
+                {
+                  "question_number": 11,
+                  "question_text": "So sánh sự khác nhau giữa chính sách cải tổ của Liên Xô trước 1991 và đường lối cải cách về kinh tế của Trung Quốc (12-978), nhận định nào sau đây đúng?",
+                  "options": {
+                    "A": "Cả hai đều áp dụng kinh tế thị trường hoàn toàn.",
+                    "B": "Liên Xô vẫn giữ kinh tế tập trung đến cuối cùng, Trung Quốc chuyển nền kinh tế kế hoạch hóa tập trung sang nền kinh tế thị trường xã hội nghĩa linh hoạt.",
+                    "C": "Trung Quốc không thực hiện cải cách kinh tế, Liên Xô đã cải cách, cải tổ.",
+                    "D": "Liên Xô chuyển sang đa đảng, Trung Quốc duy trì một đảng."
+                  },
+                  "correct_answer": "B"
+                },
+                {
+                  "question_number": 12,
+                  "question_text": "Để một quốc gia xã hội chủ nghĩa hiện đại duy trì ổn định chính trị nhưng thúc đẩy phát triển kinh tế, chiến lược hiệu quả là:",
+                  "options": {
+                    "A": "Chuyển hẳn sang kinh tế tư bản, từ bỏ chế độ chính trị.",
+                    "B": "Mở rộng đa đảng và bỏ mọi chính sách kinh tế tập trung.",
+                    "C": "Giữ nguyên kế hoạch hóa tập trung mà không đổi mới.",
+                    "D": "Kết hợp đổi mới kinh tế, kiên định vai trò lãnh đạo chính trị của Đảng cộng sản."
+                  },
+                  "correct_answer": "D"
+                }
+              ]
+            },
+            {
+              "part_name": "Phần II. Câu trắc nghiệm đúng sai",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "Đọc đoạn tư liệu sau đây: \"Sau năm 1991, hệ thống xã hội chủ nghĩa thế giới không còn tồn tại như trước, tuy nhiên chủ nghĩa xã hội vẫn tiếp tục phát triển ở một số quốc gia. Các nước này tiến hành cải cách, đổi mới, vận dụng kinh tế thị trường nhằm thúc đẩy tăng trưởng kinh tế, đồng thời giữ vai trò lãnh đạo của Đảng Cộng sản và mục tiêu xây dựng chủ nghĩa xã hội.\"",
+                  "statements": {
+                    "a": "Sau năm 1991, chủ nghĩa xã hội hoàn toàn chấm dứt trên phạm vi toàn thế giới.",
+                    "b": "Một số quốc gia xã hội chủ nghĩa tiếp tục tồn tại và tiến hành cải cách, đổi mới.",
+                    "c": "Việc vận dụng kinh tế thị trường ở các nước xã hội chủ nghĩa nhằm thúc đẩy phát triển kinh tế.",
+                    "d": "Đổi mới kinh tế ở các nước xã hội chủ nghĩa đồng nghĩa với việc từ bỏ vai trò lãnh đạo của Đảng Cộng sản."
+                  },
+                  "correct_answers": {
+                    "a": "Sai",
+                    "b": "Đúng",
+                    "c": "Đúng",
+                    "d": "Sai"
+                  }
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "Đọc đoạn tư liệu sau đây: \"Chủ nghĩa xã hội đặc sắc Trung Quốc hướng tới mục tiêu xây dựng Trung Quốc thành cường quốc hiện đại hóa xã hội chủ nghĩa giàu mạnh, văn minh, hài hòa, tươi đẹp vào giữa thế kỉ này. Một trong những trụ cột để thực hiện mục tiêu trên là xây dựng hệ thống kinh tế hiện đại hóa\"",
+                  "statements": {
+                    "a": "Chủ nghĩa xã hội đặc sắc Trung Quốc đặt mục tiêu xây dựng Trung Quốc thành cường quốc hiện đại hóa xã hội chủ nghĩa giàu mạnh, văn minh.",
+                    "b": "Mục tiêu xây dựng Trung Quốc thành cường quốc hiện đại hóa xã hội chủ nghĩa giàu mạnh, được xác định vào giữa thế kỉ XXI.",
+                    "c": "Xây dựng hệ thống kinh tế hiện đại hóa được coi là một trong những trụ cột để thực hiện mục tiêu phát triển của Trung Quốc.",
+                    "d": "Việc Xây dựng hệ thống kinh tế hiện đại hóa đồng nghĩa với việc Trung Quốc từ bỏ mục tiêu xây dựng chủ nghĩa xã hội."
+                  },
+                  "correct_answers": {
+                    "a": "Đúng",
+                    "b": "Đúng",
+                    "c": "Đúng",
+                    "d": "Sai"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic_id": 3,
+      "topic_name": "QUÁ TRÌNH GIÀNH ĐỘC LẬP DÂN TỘC CỦA CÁC QUỐC GIA ĐNÁ",
+      "sections": [
+        {
+          "section_id": "A",
+          "section_name": "QUÁ TRÌNH XÂM LƯỢC VÀ CAI TRỊ CỦA CHỦ NGHĨA THỰC DÂN Ở ĐNÁ",
+          "parts": [
+            {
+              "part_name": "Phần I. Câu trắc nghiệm nhiều phương án lựa chọn",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "Quốc gia phương Tây nào đặt chân đến Đông Nam Á sớm nhất?",
+                  "options": {
+                    "A": "Bồ Đào Nha.",
+                    "B": "Tây Ban Nha.",
+                    "C": "Hà Lan.",
+                    "D": "Anh."
+                  },
+                  "correct_answer": "A"
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "Đâu không phải là mục tiêu xâm lược của các nước phương Tây ở Đông Nam Á?",
+                  "options": {
+                    "A": "Thị trường tiêu thụ hàng hóa.",
+                    "B": "Nguồn cung cấp nguyên liệu.",
+                    "C": "Truyền bá văn hóa phương Tây.",
+                    "D": "Vị trí địa lý chiến lược."
+                  },
+                  "correct_answer": "C"
+                },
+                {
+                  "question_number": 3,
+                  "question_text": "Quốc gia Đông Nam Á nào không bị biến thành thuộc địa hoàn toàn vào cuối thế kỷ XIX - đầu thế kỷ XX?",
+                  "options": {
+                    "A": "Việt Nam.",
+                    "B": "Indonesia.",
+                    "C": "Xiêm (Thái Lan).",
+                    "D": "Philippines."
+                  },
+                  "correct_answer": "C"
+                },
+                {
+                  "question_number": 4,
+                  "question_text": "Hình thức cai trị phổ biến của các nước thực dân ở Đông Nam Á là gì?",
+                  "options": {
+                    "A": "Bảo hộ.",
+                    "B": "Trực tiếp.",
+                    "C": "Gián tiếp.",
+                    "D": "Liên minh."
+                  },
+                  "correct_answer": "B"
+                },
+                {
+                  "question_number": 5,
+                  "question_text": "Cuối thế kỉ XIX - đầu thế kỉ XX, quốc gia nào ở Đông Nam Á được coi là \"vùng đệm\" giữa khu vực thuộc địa của Anh và Pháp?",
+                  "options": {
+                    "A": "Phi-líp-pin.",
+                    "B": "Lào.",
+                    "C": "Cam-pu-chia.",
+                    "D": "Xiêm."
+                  },
+                  "correct_answer": "D"
+                },
+                {
+                  "question_number": 6,
+                  "question_text": "Đến cuối thế kỉ XIX, những nước nào ở Đông Nam Á đã trở thành thuộc địa của thực dân Pháp?",
+                  "options": {
+                    "A": "Việt Nam, Lào, Cam-pu-chia.",
+                    "B": "Xiêm, Mi-an-ma, In-đô-nê-xi-a.",
+                    "C": "Phi-líp-pin, Mi-an-ma, Lào.",
+                    "D": "Cam-pu-chia, Ma-lai-xi-a, Lào."
+                  },
+                  "correct_answer": "A"
+                },
+                {
+                  "question_number": 7,
+                  "question_text": "Nội dung nào sau đây phản ánh đúng chính sách cai trị trên lĩnh vực chính trị của thực dân phương Tây ở các nước Đông Nam Á?",
+                  "options": {
+                    "A": "Tiêu diệt các thế lực phong kiến địa phương để thâu tóm quyền hành.",
+                    "B": "Để cho người bản xứ nắm các chức vụ chủ chốt trong bộ máy cai trị.",
+                    "C": "Mua chuộc và biến các thế lực phong kiến địa phương thành tay sai.",
+                    "D": "Không cho phép người bản xứ tham gia vào bộ máy hành chính."
+                  },
+                  "correct_answer": "C"
+                },
+                {
+                  "question_number": 8,
+                  "question_text": "Nội dung nào dưới đây không phản ánh đúng chính sách cai trị về kinh tế của thực dân phương Tây đối với các nước Đông Nam Á?",
+                  "options": {
+                    "A": "Phát triển hệ thống giao thông vận tải.",
+                    "B": "Chú trọng hoạt động khai thác khoáng sản.",
+                    "C": "Cướp đoạt ruộng đất, \"cưỡng bức trồng trọt\".",
+                    "D": "Chia ruộng đất cho nông dân nghèo cày cấy."
+                  },
+                  "correct_answer": "D"
+                },
+                {
+                  "question_number": 9,
+                  "question_text": "Từ nửa sau thế kỉ XVI đến giữa thế kỉ XIX, sự xâm nhập của văn hóa phương Tây đã tác động như thế nào đến đời sống văn hóa của cư dân Đông Nam Á?",
+                  "options": {
+                    "A": "Cư dân Đông Nam Á được khai hóa văn minh.",
+                    "B": "Thúc đẩy sự hòa hợp tôn giáo ở nhiều nước.",
+                    "C": "Xói mòn những giá trị văn hóa truyền thống.",
+                    "D": "Đặt cơ sở hình thành nền văn hóa truyền thống."
+                  },
+                  "correct_answer": "C"
+                }
+              ]
+            },
+            {
+              "part_name": "Phần II. Câu trắc nghiệm đúng sai",
+              "questions": [
+                {
+                  "question_number": 1,
+                  "question_text": "Đọc tư liệu sau đây: \"Điểm chung của chính sách thống trị thực dân ở Đông Nam Á là khai thác, vơ vét và bòn rút các quốc gia trong khu vực bằng chính sách thuế khóa đánh vào các tầng lớp nhân dân bản địa, cướp ruộng đất lập đồn điền, bóc lột sức người, khai thác tài nguyên; thông qua khai thác triệt để sản phẩm nông nghiệp, tiếp tục đầu tư để bóc lột lâu dài trong công nghiệp… Vì vậy, cao su, cà phê, chè, lúa gạo là những sản vật đặc trưng của Đông Nam Á được thực dân phương Tây chú ý khai thác từ sớm.\"",
+                  "statements": {
+                    "a": "Chính sách thống trị thực dân phương Tây ở Đông Nam Á hướng tới mục tiêu bóc lột tài nguyên và sức lao động bản địa để phục vụ lợi ích của chính quốc.",
+                    "b": "Các sản phẩm như cao su, cà phê và lúa gạo không được thực dân phương Tây chú trọng khai thác ở Đông Nam Á.",
+                    "c": "Chính sách thuế khóa và cướp đất đai giúp nâng cao đời sống kinh tế của nông dân bản xứ trong thời kỳ thực dân.",
+                    "d": "Quá trình xâm lược và cai trị của thực dân phương Tây ở Đông Nam Á diễn ra chủ yếu nhằm mở rộng thị trường và thu lợi cho chính quốc."
+                  },
+                  "correct_answers": {
+                    "a": "Đúng",
+                    "b": "Sai",
+                    "c": "Sai",
+                    "d": "Đúng"
+                  }
+                },
+                {
+                  "question_number": 2,
+                  "question_text": "Đọc tư liệu sau đây: \"Từ giữa thế kỷ XIX, chủ nghĩa thực dân phương Tây bắt đầu mở rộng xâm lược vào khu vực Đông Nam Á lục địa. Thực dân Pháp tiến hành chiến tranh xâm lược nhằm thôn tính Việt Nam trước, bắt đầu từ 1858 với cuộc tấn công vào Đà Nẵng và tiến chiếm Saigon sau đó. Đến 1862, Pháp buộc triều đình nhà Nguyễn phải nhượng các tỉnh miền Đông Nam Kì, rồi dần chiếm toàn bộ Việt Nam sau nhiều chiến dịch kéo dài đến 1885. Sau khi hoàn thành việc xâm lược Việt Nam, Pháp thiết lập quyền bảo hộ và sau đó mở rộng cai trị lên Campuchia và Lào, hình thành liên minh thuộc địa Viễn Đông – Đông Dương (French Indochina) từ cuối thế kỷ XIX. Ở Lào, Pháp tổ chức lại hành chính và đưa đất đai ven sông Mekong từ Xiêm (Thái) về thuộc địa. Quyền lực thực dân được bảo đảm bằng bộ máy cai trị trực tiếp, thu thuế và kiểm soát kinh tế – xã hội của vùng thuộc địa.\"",
+                  "statements": {
+                    "a": "Thực dân Pháp là nước thực dân đã xâm lược và đặt ách cai trị lên toàn bộ Đông Dương gồm Việt Nam, Lào và Campuchia vào cuối thế kỷ XIX.",
+                    "b": "Quá trình xâm lược Việt Nam của Pháp chỉ diễn ra trong vòng 1–2 năm.",
+                    "c": "Lào và Campuchia trở thành một phần của chế độ thực dân Pháp ngay sau khi Pháp hoàn tất xâm lược Việt Nam.",
+                    "d": "Người Pháp đã thiết lập một hệ thống cai trị bao gồm cả quyền kiểm soát về kinh tế, thuế khoá và bộ máy hành chính ở các thuộc địa Đông Dương."
+                  },
+                  "correct_answers": {
+                    "a": "Đúng",
+                    "b": "Sai",
+                    "c": "Đúng",
+                    "d": "Đúng"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
