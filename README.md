@@ -1,5 +1,5 @@
 # Nguyen Huu Hoa
-![Profile Banner](https://raw.githubusercontent.com/nguyenhhoa03/nguyenhhoa03/refs/heads/main/github-header-image.png)
+
 
 ## About Me
 Hello! I'm **Nguyen Huu Hoa**, a passionate developer with hands-on experience in Python and Linux systems. I specialize in creating automation scripts, mini-applications, and productivity tools that solve real-world problems.
